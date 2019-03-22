@@ -1,8 +1,8 @@
 Try
 {
 Set-ExecutionPolicy RemoteSigned -Force
-$cmd = "C:\Program Files\Tableau\Tableau Server\10.3\bin\tabadmin.exe"
-$arguments = "backup D:\Tableau_Server_Backups\backup -d"
+$cmd = "C:\Program Files\Tableau\Tableau Server\packages\bin.20191.19.0215.0259\tsm.cmd"
+$arguments = "backup --append-date --file D:\Tableau_Server_Backups\backup-dev"
 start-process $cmd $arguments
 }
 
